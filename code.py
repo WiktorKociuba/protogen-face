@@ -7,10 +7,10 @@ import random
 
 displayio.release_displays()
 matrix = rgbmatrix.RGBMatrix(
-    width=64, height=32, bit_depth=6,
-    rgb_pins=[board.MTX_R1, board.MTX_G1, board.MTX_B1, board.MTX_R2, board.MTX_G2, board.MTX_B2],
-    addr_pins=[board.MTX_ADDRA, board.MTX_ADDRB, board.MTX_ADDRC, board.MTX_ADDRD],
-    clock_pin=board.MTX_CLK, latch_pin=board.MTX_LATCH, output_enable_pin=board.MTX_OE
+    width=64, height=32, bit_depth=1,
+    rgb_pins=[board.IO1, board.IO2, board.IO3, board.IO5, board.IO4, board.IO6],
+    addr_pins=[board.IO8, board.IO7, board.IO10, board.IO9],
+    clock_pin=board.IO12, latch_pin=board.IO11, output_enable_pin=board.IO13
 )
 
 def blink(bitmaps):
